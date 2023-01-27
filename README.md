@@ -53,10 +53,20 @@ http://localhost/zabbix/  login:Admin passwd:zabbix
 
 *Приложите скриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу. Приложите скриншот лога zabbix agent, где видно, что он работает с сервером. Приложите скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные. Приложите текст использованных команд в GitHub.*
 ```
+wget https://repo.zabbix.com/zabbix/6.2/debian/pool/main/z/zabbix-release/zabbix-release_6.2-4%2Bdebian11_all.deb
+sudo dpkg -i zabbix-release_6.2-4+debian11_all.deb
+sudo apt update
+sudo apt install -y zabbix-agent
+sudo nano /etc/zabbix/zabbix_agentd.conf # Server=192.168.32.211 # LogFileSize=64
+sudo systemctl restart zabbix-agent
+sudo systemctl enable zabbix-agent
 ```
 ![Скриншот раздела Configuration > Hosts](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9-2-2-1.png "Скриншот раздела Configuration > Hosts")
 ![Скриншот лога zabbix agent](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9-2-2-2.png "Скриншот лога zabbix agent")
-![Скриншот раздела Monitoring > Latest data](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9-2-2-3.png "Скриншот раздела Monitoring > Latest data")
+![Скриншот лога zabbix agent](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9-2-2-3.png "Скриншот лога zabbix agent")
+![Скриншот лога zabbix agent](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9-2-2-4.png "Скриншот лога zabbix agent")
+![Скриншот раздела Monitoring > Latest data](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9-2-2-5.png "Скриншот раздела Monitoring > Latest data для debian-1")
+![Скриншот раздела Monitoring > Latest data](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9-2-2-6.png "Скриншот раздела Monitoring > Latest data для debian-2")
 
 ---
 
