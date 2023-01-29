@@ -77,4 +77,5 @@ sudo systemctl enable zabbix-agent
 *Приложите скриншот раздела Latest Data, где видно свободное место на диске C:*
 ```
 ```
-![Скриншот раздела Latest Data](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9-2-3.png "Скриншот раздела Latest Data")
+![Скриншот раздела Latest Data](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9.2.3.png "Скриншот раздела Latest Data")
+![Скриншот раздела Configuration > Hosts](https://github.com/StanislavBaranovskii/9-2-hw-zabbix-1/blob/main/img/9.2.3.1.png "Скриншот раздела Configuration > Hosts")
